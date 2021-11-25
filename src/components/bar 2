@@ -17,7 +17,7 @@ function LinearProgressWithLabel(props) {
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Box sx={{ width: '100%', mr: 1 }}>
                 <LinearProgress
-                    style={{ height: '30px', borderRadius: '4px', cursor: 'pointer' }}
+                    style={{ height: '40px', borderRadius: '4px', cursor: 'pointer' }}
                     variant="determinate"
                     value={props.value}
                     classes={{
@@ -27,7 +27,7 @@ function LinearProgressWithLabel(props) {
                     onClick={props.onClick}
                 />
             </Box>
-            <Box sx={{ minWidth: 35 }}>
+            <Box sx={{ minWidth: 40 }}>
                 <Typography variant="body1" color="text.secondary" style={{ userSelect: 'none' }}>
                     {props.label}
                 </Typography>
